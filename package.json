@@ -1,5 +1,5 @@
 {
-  "name": "vita-vue3-vant3-router4-mobile-template",
+  "name": "webgpu-games-engine",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,6 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@webgpu/types": "^0.1.7",
+    "axios": "^0.24.0",
+    "gl-matrix": "^3.4.3",
     "sass": "^1.43.4",
     "vant": "^3.2.6",
     "vue": "^3.2.16",

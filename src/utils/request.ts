@@ -4,13 +4,14 @@
  * @Email: indeex@qq.com
  */
 import axios from "axios";
+import {baseURL} from './config'
 const service = axios.create({
   baseURL,
   timeout: 5000 // request timeout
 });
 // 发起请求之前的拦截器
 service.interceptors.request.use(
-  config => {
+  (config: any) => {
     // 如果有token 就携带tokon
     const token = window.localStorage.getItem("accessToken");
     if (token) {
