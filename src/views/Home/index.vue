@@ -146,15 +146,13 @@ onMounted(() => {
 
       device.queue.submit([commandEncoder.finish()]);
     };
-
     Create3DObject();
-  }, 1000);
+  }, 3000);
 });
 </script>
 
 <template>
   <canvas id="canvas" ref="canvas" width="640" height="480"></canvas>
-  <van-popup v-model="show">内容</van-popup>
 </template>
 
 <style lang="scss" scoped>
